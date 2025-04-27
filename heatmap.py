@@ -52,7 +52,7 @@ def extract_mfcc_features(wav_file):
         f2 = np.mean(f).astype(np.float32)
         f3.append(f2)
     f3 = np.array(f3)
-    # 将所有特征值组合成一个6x14矩阵
+    # 将所有特征值组合成一个7x14矩阵
     mfcc_feature_matrix = np.vstack([f3, mean, delta1, delta2, std_dev, delta1_std, delta2_std])
 
     return mfcc_feature_matrix
