@@ -30,12 +30,8 @@ def extract_features(text_features, text_targets, path):
             for topic in topics:
                 with open(os.path.join(prefix, '{1}_{0}'.format(str(index+1), path), '%s.txt'%(topic)) ,'r', encoding='utf-8') as f:
                     lines = f.readlines()[0]
-                    # seg_text = seg.cut(lines) 
-                    # seg_text = thu1.cut(lines)
-                    # seg_text_iter = HanLP.segment(lines) 
                     seg_text_iter = jieba.cut(lines, cut_all=False) 
                     answers[index+1].append([item for item in seg_text_iter])
-                    # answers[dir].append(seg_text)
             with open(os.path.join(prefix, '{1}_{0}/new_label.txt'.format(index+1, path))) as fli:
                 target = float(fli.readline())
             # text_targets.append(1 if target >= 53 else 0)
