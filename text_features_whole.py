@@ -13,7 +13,7 @@ import thulac
 import jieba
 # seg = pkuseg.pkuseg()
 # thu1 = thulac.thulac(seg_only=True)
-elmo = Embedder('D:/pywork/icassp2022-depression-main/DepressionCollected/zhs.model')
+elmo = Embedder('zhs.model')
 
 #a = os.path.join(prefix, '{1}_{0}'.format(1, 'EATD-Corpus/t'))
 #print(a)
