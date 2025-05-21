@@ -108,9 +108,9 @@ class ChineseTensorEncoder():
 
 if __name__ == "__main__":
     tensor_encoder = ChineseTensorEncoder(
-        vocab_path="D:/pywork/snn-covert/snn/word2vec/sgns.target.word-ngram.1-2.dynwin5.thr10.neg5.dim300.iter5",
+        vocab_path="./word2vec/sgns.target.word-ngram.1-2.dynwin5.thr10.neg5.dim300.iter5",
         dataset_name="copus",
-        datafile_path="D:/pywork/icassp2022-depression-main/DepressionCollected/Classification/copus.csv",
+        datafile_path="./Classification/copus.csv",
         sent_length=3,
         embedding_dim=300,
         bias=3
